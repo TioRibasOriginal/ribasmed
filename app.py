@@ -1,10 +1,10 @@
+from flask import Flask, request, jsonify
+import sqlite3
+
 # Rota raiz para teste
 @app.route('/')
 def home():
     return "<h1>Sistema de Prontuário Eletrônico</h1><p>API funcionando corretamente!</p>"
-
-from flask import Flask, request, jsonify
-import sqlite3
 
 app = Flask(__name__)
 
