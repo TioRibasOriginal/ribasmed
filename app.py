@@ -1,11 +1,6 @@
 from flask import Flask, request, jsonify
 import sqlite3
 
-# Rota raiz para teste
-@app.route('/')
-def home():
-    return "<h1>Sistema de Prontuário Eletrônico</h1><p>API funcionando corretamente!</p>"
-
 app = Flask(__name__)
 
 # Função para conectar ao banco de dados
